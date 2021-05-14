@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".CartActivity">
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="515dp"
+        android:id="@+id/flipper"
+        android:flipInterval="4000">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="515dp"
+            android:src="@drawable/img1"
+
+            android:layout_gravity="center_horizontal"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="515dp"
+            android:src="@drawable/img2"
+
+            android:layout_gravity="center_horizontal"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="515dp"
+            android:src="@drawable/img3"
+
+            android:layout_gravity="center_horizontal"/>
+    </ViewFlipper>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eyevy"
+        android:textSize="15sp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="12dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full Rim Round, Cat-eyed Anti Glare Frame(48 mm)"
+        android:textSize="15sp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="\u20B9 219"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="12dp"
+            android:textSize="26sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="20dp" />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_2"
+            android:text="\u20B9 999"
+            android:layout_marginRight="15dp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_marginEnd="15dp" />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="78% off"
+            android:textSize="20sp"
+            android:textColor="#056E0A"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="202dp"
+            android:layout_alignParentBottom="true"
+            android:text="ADD TO CART"
+            android:textSize="15sp"
+            android:background="#fff"
+            android:layout_height="68dp"/>
+
+        <Button
+            android:layout_width="202dp"
+            android:layout_height="68dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="#F4C22E"
+            android:text="BUY NOW"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</LinearLayout>
